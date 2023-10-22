@@ -1,0 +1,188 @@
+
+/* using css only */
+body {
+    margin: 0 139px;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    margin: 0 -8px;
+}
+
+.col-md-7 {
+    flex: 7;
+    padding: 8px;
+    background-color: white;
+}
+
+.col-md-5 {
+    flex: 5;
+    padding: 8px;
+    background-color: white;
+}
+
+.form {
+ margin-top: 50px;
+}
+
+img {
+    width: 670px;
+    height: 760px;
+    opacity: 100%;
+    
+}
+
+.formvalidation {
+    border-radius: 10px;
+    width: 400px;
+    
+  }
+  
+
+  .text{
+    
+ 
+    font-weight: 200;  
+    margin-top: 60px;
+    left: 139px;
+    width: 471px;
+    height: 55px;
+    text-align: left;
+    font: normal normal 200 40px/52px Manrope;
+    letter-spacing: 0px;
+    color: #05253C;
+    opacity: 1;
+    animation: fadeIn 2s ease-in-out forwards; 
+ 
+    
+  }
+
+  /* text animation */
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+  
+
+  .lb{
+    text-align: left;
+    font: normal normal medium 16px Plus Jakarta Sans;
+    letter-spacing: 0px;
+    color: #05253C;
+    opacity: 1;
+    left: 139px;
+
+  }
+  
+
+ .infos {
+   
+    width: 444px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 7px;
+    outline: 1em;
+    border-bottom: 1px solid rgba(22, 22, 22, 0.192);
+    transition: all 400ms;
+    color: rgb(10, 10, 10);
+  } 
+
+
+  .infos , input::placeholder {
+
+    text-align: left;
+    font: normal normal medium 12px/24px Plus Jakarta Sans;
+    letter-spacing: 0px;
+    color: #DBDBDB;
+    opacity: 1;
+  }
+
+  
+label.error{
+   
+left: 464px;
+top: 509px;
+width: 450px;
+height: 10px;
+text-align: right;
+font: normal normal medium 12px/24px Plus Jakarta Sans;
+letter-spacing: 0px;
+color: #FF0000;
+}
+
+
+.button{
+top: 643px;
+left: 139px;
+width: 168px;
+height: 45px;
+background: #FFDC47 0% 0% no-repeat padding-box;
+opacity: 1;
+border: .0rem solid black;
+border-radius: .4rem;
+font: normal normal 600 16px/32px Plus Jakarta Sans;
+letter-spacing: 0px;
+}
+
+
+.logo {
+    margin-top: 81px;
+    left: 139px;
+    width: 76px;
+    height: 76px;
+   
+}
+
+
+
+
+
+
+/* Start Responsive part */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+   .col-md-7, .col-md-5 {
+        flex: 12; 
+    }
+     
+    .form {
+        padding: 2rem;
+    }
+
+ 
+        html{
+            font-size: 55%;
+        }
+    
+}
+
+
+ @media (max-width: 480px) {
+    .container {
+        margin: 0; 
+    }
+    
+    .col-md-7, .col-md-5 {
+        flex: 12; 
+    }
+} 
+
+@media(max-width:400px){
+    html{
+        font-size: 50%;
+    }
+
+}
+
+/* End Responsive part */
